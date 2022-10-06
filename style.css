@@ -1,43 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 body {
-
-    padding: 0;
-
+    font-family: 'Roboto', sans-serif;
     margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #ffb700;
+}
 
+header {
+    width: 100vw;
+    height: 13vh;
+    position: fixed;
 }
 
 nav {
-
-    justify-content: space-between;
-    
-    align-items: center;
-
-    width: 100%;
-
     display: flex;
-
-    position: fixed;
-
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 13vh;
+    background-color: #ffa200;
 }
 
-nav a {
-
-    color: #000;
-
-    margin: auto 20px auto 40px;
-
-    text-decoration: none;
-
-    font-weight: bold;
-
+nav img {
+    margin: 1vh 0 1vw 2vh;
+    width: 12%;
+    height: fit-content;
 }
 
-nav li {
-
-    float: left;
-
+ul {
+    display: flex;
     list-style: none;
+    margin-right: 5vw;
+}
 
-    margin-left: 20px;
+li {
+    margin-right: 3vw;
+}
 
+a {
+    font-size: 1.8vw;
+    padding: 2vw;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    transition: all 0.7s ease;
+    background-color: #ffb700;
+    color: white;
+}
+
+main img {
+    margin-top: 13vh;
+    width: 100%;
+    height: 87vh;
+}
+
+.mobile-img{
+    display: none;
+}
+
+main div {
+    margin-left: 2vw;
+    text-align: left;
+}
+
+.img{
+    margin-left: 0;
+}
+
+h1 {
+    font-size: 4vw;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffa200;
+    font-size: 2vw;
+}
+
+footer img {
+    width: 15%;
+    height: fit-content;
+}
+
+footer h2 {
+    margin-left: 2vw;
+}
+
+footer div {
+    margin-right: 2vw;
+}
+
+.conteudo {
+    text-align: center;
+    margin: 18vh 2vw;
+}
+
+.conteudo p {
+    font-size: 2.5vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 6vh;
+}
+
+.container h2 {
+    font-size: 2.5vw;
+    text-align: center;
+    width: 100%;
+    margin-top: 10vh;
+}
+
+.container div {
+    width: fit-content;
+}
+
+.container2 p {
+    font-size: 2vw;
+    margin-top: 15vh;
+}
+
+.container img {
+    margin-top: 0;
+    width: 38vw;
+    height: 50vh;
+}
+
+.hospedagens {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vw;
+    align-items: center;
+}
+
+.hospedagens div {
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    background-color: white;
+    padding: 3vw;
+    border-radius: 5%;
+}
+
+.hospedagens img {
+    width: 38vw;
+    height: 50vh;
+}
+
+.hospedagens h3 {
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+.hospedagens h4 {
+    font-size: 2vw;
+}
+
+.localizacao h5 {
+    font-size: 1.4vw;
+}
+
+.localizacao p {
+    font-size: 0.8vw;
+}
+
+.localizacao h3 {
+    font-size: 1.8vw;
+}
+
+.map {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    margin: 5vw 0;
+}
+
+form * {
+    margin: 1.2vw 0;
+}
+
+form div {
+    text-align: center;
+}
+
+form div p {
+    display: inline-block;
+}
+
+@media (max-width: 576px) {
+
+    *{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body{
+        background-color: #0077b6;
+    }
+
+    nav{
+        background-color: #0096c7;
+    }
+
+    footer{
+        background-color: #0096c7
+    }
+
+    .pc-img {
+        display: none;
+    }
+
+    .mobile-img{
+        text-align: center;
+        margin-top: 23vh;
+        display: inline-block;
+        width: 60%;
+        height: 45vh;
+    }
+    a {
+        font-size: 2.3vw;
+    }
+
+    h1 {
+        font-size: 3.5vw;
+    }
+
+    footer {
+        font-size: 2vw;
+    }
+
+    .conteudo {
+
+        margin: 25vh 2vw;
+    }
+
+    .conteudo p {
+        font-size: 5vw;
+    }
+
+    .container2 {
+        margin-bottom: 8vh;
+    }
+
+    .container h2 {
+        font-size: 4vw;
+        margin-top: 12vh;
+    }
+
+    .container2 p {
+        font-size: 3vw;
+        margin-top: 20vh;
+    }
+
+    .container img {
+        width: 76vw;
+        height: 100vh;
+    }
+
+    .hospedagens {
+        margin-top: 6vw;
+    }
+
+    .hospedagens div {
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+    }
+
+    .hospedagens img {
+        width: 76vw;
+        height: 100vh;
+    }
+
+    .hospedagens h3 {
+        font-size: 3vw;
+    }
+
+    .hospedagens h4 {
+        font-size: 3vw;
+    }
+
+    .localizacao *{
+        text-align: center;
+    }
+
+    .localizacao h5 {
+        font-size: 3vw;
+    }
+
+    .localizacao p {
+        font-size: 2vw;
+    }
+
+    .localizacao h3 {
+        font-size: 3vw;
+    }
+
+    form {
+        margin: 7vw 0;
+    }
+
+    form * {
+        margin: 2vw 0;
+    }
 }
